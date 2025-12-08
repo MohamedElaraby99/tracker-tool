@@ -1,0 +1,11 @@
+@use "vars";
+@use 'sass:math';
+
+.status {
+
+	display: flex;
+	gap: math.div(vars.$gutter, 2);
+	justify-content: start;
+	align-items: center;
+
+}

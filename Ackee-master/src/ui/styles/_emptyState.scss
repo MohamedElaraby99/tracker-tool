@@ -1,0 +1,26 @@
+@use "vars";
+@use 'sass:math';
+
+.emptyState {
+
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	height: vars.$cardContentHeight;
+
+	&__inner {
+		display: grid;
+		align-items: center;
+		grid-auto-flow: column;
+		gap: math.div(vars.$gutter, 1.5);
+	}
+
+	&__icon {
+		$size: 24px;
+
+		fill: vars.$light;
+		width: $size;
+		height: $size;
+	}
+
+}

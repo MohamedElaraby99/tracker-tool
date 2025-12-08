@@ -1,0 +1,11 @@
+@use "vars";
+
+.text {
+
+	margin: 0 0 vars.$gutter;
+
+	&--no-spacing {
+		margin-bottom: 0;
+	}
+
+}

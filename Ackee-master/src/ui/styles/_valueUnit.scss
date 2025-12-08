@@ -1,0 +1,12 @@
+@use "vars";
+@use 'sass:math';
+
+.valueUnit {
+
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: start;
+	align-items: end;
+	gap: math.div(vars.$gutter, 2);
+
+}

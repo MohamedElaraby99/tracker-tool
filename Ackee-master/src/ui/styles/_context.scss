@@ -1,0 +1,107 @@
+@use "vars";
+@use 'sass:math';
+
+.context {
+
+	position: absolute;
+	display: grid;
+	top: 0;
+	left: 0;
+	padding: math.div(vars.$gutter, 2) 0;
+	min-width: 210px;
+	background: rgba(vars.$context, .98);
+	border-radius: vars.$radius;
+	transform: translate(var(--x), var(--y));
+	z-index: 3;
+	opacity: 0;
+	pointer-events: none;
+
+	@supports (backdrop-filter: blur(10px)) {
+		background: vars.$context;
+		backdrop-filter: blur(10px);
+	}
+
+	@media (max-width: 800px) {
+		font-size: .9em;
+	}
+
+	&--fixed {
+		position: fixed;
+	}
+
+	&--tooltip {
+		max-width: 300px;
+	}
+
+	&--floating {
+		border-radius: 12px;
+	}
+
+	&.visible {
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	&__content {
+		margin: 0;
+		padding: math.div(vars.$gutter, 3) vars.$gutter*1.2;
+		font-size: .9em;
+	}
+
+	&__button {
+		padding: math.div(vars.$gutter, 3) vars.$gutter*1.2;
+		color: currentColor;
+		text-align: left;
+		transition: color .3s ease, background .2s ease;
+		line-height: 1.4;
+		outline: none;
+
+		&.active {
+			color: vars.$white;
+		}
+
+		&:focus,
+		&:hover {
+			background: vars.$dimmed;
+		}
+	}
+
+	&--floating &__button {
+		margin: 0 math.div(vars.$gutter, 2);
+		padding: math.div(vars.$gutter, 2) math.div(vars.$gutter, 1.6);
+		color: vars.$white;
+		border-radius: vars.$innerRadius;
+
+		&.active {
+			color: vars.$primary;
+		}
+	}
+
+	&__head {
+		display: grid;
+		grid-auto-flow: column;
+		gap: vars.$gutter;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__label {
+		max-width: 240px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	&__description {
+		padding-right: vars.$gutter;
+		font-size: .86em;
+		color: vars.$light;
+	}
+
+	&__separator {
+		height: 1px;
+		background: vars.$dimmed;
+		margin: math.div(vars.$gutter, 2) 0;
+	}
+
+}

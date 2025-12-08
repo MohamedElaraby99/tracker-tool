@@ -1,0 +1,16 @@
+@use "vars";
+
+.favicon {
+
+	width: vars.$rowHeight;
+	height: vars.$rowHeight;
+	background: vars.$white;
+	border-radius: 100%;
+	border: 2px solid vars.$white;
+	overflow: hidden;
+
+	&--missing {
+		background: vars.$gradient;
+	}
+
+}

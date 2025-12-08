@@ -1,0 +1,25 @@
+@use "vars";
+
+.color {
+
+	&-primary {
+		color: vars.$primary;
+	}
+
+	&-white {
+		color: vars.$white;
+	}
+
+	&-light {
+		color: vars.$light;
+	}
+
+	&-black {
+		color: vars.$black;
+	}
+
+	&-destructive {
+		color: vars.$destructive;
+	}
+
+}

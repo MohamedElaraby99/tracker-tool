@@ -1,0 +1,10 @@
+@use "vars";
+
+.line {
+
+	margin: 0 0 vars.$gutter;
+	height: 1px;
+	background: vars.$dimmed;
+	border: 0;
+
+}

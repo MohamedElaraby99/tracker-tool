@@ -1,0 +1,26 @@
+@use "../../../node_modules/formbase/src/styles/vars" as vars2;
+@use "vars";
+
+.message {
+
+	margin-bottom: vars.$gutter;
+	// Make the padding and border look like formbase
+	padding: vars2.$formbase__padding;
+	border: 2px solid transparent;
+	border-radius: vars.$innerRadius;
+	color: vars.$white;
+	font-size: .8em;
+
+	&--success {
+		background: vars.$success;
+	}
+
+	&--warning {
+		background: vars.$warning;
+	}
+
+	&--error {
+		background: vars.$error;
+	}
+
+}
