@@ -4,17 +4,17 @@ With Events, you can track button clicks, newsletter subscriptions, followers an
 
 ## Privacy disclaimer
 
-Ackee won't track personal information by default, but tracked events might either contain personal behavior patterns or data related to individual users. It's therefore recommended to ask the user for permission before tracking events.
+FikraTracker won't track personal information by default, but tracked events might either contain personal behavior patterns or data related to individual users. It's therefore recommended to ask the user for permission before tracking events.
 
 ## Usage
 
 ### Creating events
 
-Create a new event in the settings of Ackee and you're ready to go. Ackee shows the id and a usage example when you click on an existing event. You can use the code to get started or by taking a look at the documentation of [ackee-tracker](https://github.com/electerious/ackee-tracker).
+Create a new event in the settings of FikraTracker and you're ready to go. FikraTracker shows the id and a usage example when you click on an existing event. You can use the code to get started or by taking a look at the documentation of [FikraTracker-tracker](https://github.com/electerious/FikraTracker-tracker).
 
 #### Event type
 
-The event type specifies how Ackee will show the aggregated data in the UI. It can be changed at any time.
+The event type specifies how FikraTracker will show the aggregated data in the UI. It can be changed at any time.
 
 - **Chart with total sums**: Shows the aggregated data as a chart. Each day, month or year (depending on the chosen interval) includes the total sum of values.
 - **Chart with average values**: Shows the aggregated data as a chart. Each day, month or year (depending on the chosen interval) includes the average value.
@@ -23,14 +23,14 @@ The event type specifies how Ackee will show the aggregated data in the UI. It c
 
 ### Adding actions
 
-An action should be added to an event whenever the user does what you want to track. It's similar to domains that get filled with records. You can add an action to an event [using the GraphQL API](API.md#Create%20an%20action) or using [ackee-tracker](https://github.com/electerious/ackee-tracker). An action creation can be triggered by anything that executes JS.
+An action should be added to an event whenever the user does what you want to track. It's similar to domains that get filled with records. You can add an action to an event [using the GraphQL API](API.md#Create%20an%20action) or using [FikraTracker-tracker](https://github.com/electerious/FikraTracker-tracker). An action creation can be triggered by anything that executes JS.
 
 Setup:
 
 ```js
-import * as ackeeTracker from 'ackee-tracker'
+import * as FikraTrackerTracker from 'FikraTracker-tracker'
 
-const instance = ackeeTracker.create('https://ackee.example.com')
+const instance = FikraTrackerTracker.create('https://FikraTracker.example.com')
 ```
 
 Examples:

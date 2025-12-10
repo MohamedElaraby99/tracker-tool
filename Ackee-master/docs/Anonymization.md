@@ -1,22 +1,22 @@
 # Anonymization
 
-Ackee tries its best to keep tracked data anonymized. Several steps are used to avoid that users are identifiable, while still providing helpful analytics.
+FikraTracker tries its best to keep tracked data anonymized. Several steps are used to avoid that users are identifiable, while still providing helpful analytics.
 
 ## User identifier
 
-Ackee uses the IP, user-agent and domainId to identify a user. All information will be hashed together with a [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)) that changes daily. The final hash is called `clientId`.
+FikraTracker uses the IP, user-agent and domainId to identify a user. All information will be hashed together with a [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)) that changes daily. The final hash is called `clientId`.
 
 The daily salt is never stored anywhere. It avoids that database backups can be used to stick data together to reconstruct the browsing history of a user.
 
-Ackee also removes personal data from previous records when a new record with an existing identification gets added. This way the user identifier and other identifiable data is only stored once in the database. Or with other words: Ackee forgets who you are as soon as it sees you, again. It's not possible to reconstruct a browsing history, even on a daily basis.
+FikraTracker also removes personal data from previous records when a new record with an existing identification gets added. This way the user identifier and other identifiable data is only stored once in the database. Or with other words: FikraTracker forgets who you are as soon as it sees you, again. It's not possible to reconstruct a browsing history, even on a daily basis.
 
 ## Personal data
 
-Ackee won't track personal information by default, but it has the ability to do so in a privacy focused way. Our recommendation:
+FikraTracker won't track personal information by default, but it has the ability to do so in a privacy focused way. Our recommendation:
 
 1. Ask the user for permission to track personal data and set a cookie to remember their decision
-2. Enable `detailed` with the next page view (an option of [ackee-tracker](https://github.com/electerious/ackee-tracker))
-3. Ackee now receives data considered as "personal data"
+2. Enable `detailed` with the next page view (an option of [FikraTracker-tracker](https://github.com/electerious/FikraTracker-tracker))
+3. FikraTracker now receives data considered as "personal data"
 
 The following data is considered as "personal data":
 

@@ -12,7 +12,7 @@ There are multiple tasks you can do in order to help us, for example:
 
 ## Contributing workflow
 
-In order to make a code contribution, create a fork of Ackee by clicking the "Fork" button on [GitHub](https://github.com/electerious/Ackee) and cloning the repo to your local machine.
+In order to make a code contribution, create a fork of FikraTracker by clicking the "Fork" button on [GitHub](https://github.com/electerious/FikraTracker) and cloning the repo to your local machine.
 
 Please use the `develop` branch as a base for your contribution and make your changes on a new branch.
 
@@ -22,7 +22,7 @@ Once you're finished, push your branch to your repo and create a pull request!
 
 ## Development mode
 
-Simply run Ackee with `NODE_ENV` set to `development` to get access to the [GraphQL Playground](https://docs.ackee.electerious.com/#/docs/API#playground). You can do this by adding `NODE_ENV=development` to the environment of your `docker-compose.yml` or by running:
+Simply run FikraTracker with `NODE_ENV` set to `development` to get access to the [GraphQL Playground](https://docs.FikraTracker.electerious.com/#/docs/API#playground). You can do this by adding `NODE_ENV=development` to the environment of your `docker-compose.yml` or by running:
 
 ```sh
 npm run dev

@@ -1,12 +1,12 @@
 # SSL and HTTPS
 
-Ackee runs a simple server that doesn't support TLS/SSL. This means it's not possible to directly connect via HTTPS. It's recommended to use a reverse proxy instead. This document explains how.
+FikraTracker runs a simple server that doesn't support TLS/SSL. This means it's not possible to directly connect via HTTPS. It's recommended to use a reverse proxy instead. This document explains how.
 
 ## What is a reverse proxy?
 
 > A reverse proxy is a type of proxy server that retrieves resources on behalf of a client from one or more servers. These resources are then returned to the client, appearing as if they originated from the proxy server itself.
 
-A reverse proxy makes it easy for you to run Ackee on your server along with other services. It also allows you to secure connections using TLS/SSL.
+A reverse proxy makes it easy for you to run FikraTracker on your server along with other services. It also allows you to secure connections using TLS/SSL.
 
 I highly recommend [this article](https://medium.com/intrinsic/why-should-i-use-a-reverse-proxy-if-node-js-is-production-ready-5a079408b2ca) if you want to lean more about reverse proxies.
 
@@ -22,7 +22,7 @@ I highly recommend [this article](https://medium.com/intrinsic/why-should-i-use-
 
 This configuration redirects all requests to the non-www domain `example.com`, secures connections using TSL/SSL and allows CORS requests from a list of known domains.
 
-> 👉 The CORS headers are required so your sites can send data to Ackee, even when their domain is different to the one Ackee uses.
+> 👉 The CORS headers are required so your sites can send data to FikraTracker, even when their domain is different to the one FikraTracker uses.
 
 ```conf
 #
@@ -96,7 +96,7 @@ server {
 
 #### Single domain configuration
 
-This configuration secures all connections using TSL/SSL and allows `https://example.com` to send data to `https://ackee.example.com`.
+This configuration secures all connections using TSL/SSL and allows `https://example.com` to send data to `https://FikraTracker.example.com`.
 
 > ℹ️ This configuration only allows requests from a single domain. Take a look at our [recommended configuration](#recommended-configuration) if you want to allow requests from multiple domains or use the [insecure wildcard configuration](#insecure-wildcard-configuration).
 
@@ -104,13 +104,13 @@ This configuration secures all connections using TSL/SSL and allows `https://exa
 server {
     listen 443 ssl http2;
 
-    server_name ackee.example.com;
+    server_name FikraTracker.example.com;
 
-    ssl_certificate     /etc/letsencrypt/live/ackee.example.com/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/ackee.example.com/privkey.pem;
+    ssl_certificate     /etc/letsencrypt/live/FikraTracker.example.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/FikraTracker.example.com/privkey.pem;
 
-    access_log /var/log/nginx/log/ackee.example.com.access.log main;
-    error_log  /var/log/nginx/log/ackee.example.com.error.log;
+    access_log /var/log/nginx/log/FikraTracker.example.com.access.log main;
+    error_log  /var/log/nginx/log/FikraTracker.example.com.error.log;
 
     location / {
         add_header          Access-Control-Allow-Origin "https://example.com" always;
@@ -133,19 +133,19 @@ server {
 
 #### Insecure wildcard configuration
 
-A wildcard (`*`) isn't recommended as it's neither a secure solution nor does it allow Ackee to ignore your own visits. Please disable the `ignoreOwnVisits` option in ackee-tracker if using a wildcard is the only option for you.
+A wildcard (`*`) isn't recommended as it's neither a secure solution nor does it allow FikraTracker to ignore your own visits. Please disable the `ignoreOwnVisits` option in FikraTracker-tracker if using a wildcard is the only option for you.
 
 ```conf
 server {
     listen 443 ssl http2;
 
-    server_name ackee.example.com;
+    server_name FikraTracker.example.com;
 
-    ssl_certificate     /etc/letsencrypt/live/ackee.example.com/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/ackee.example.com/privkey.pem;
+    ssl_certificate     /etc/letsencrypt/live/FikraTracker.example.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/FikraTracker.example.com/privkey.pem;
 
-    access_log /var/log/nginx/log/ackee.example.com.access.log main;
-    error_log  /var/log/nginx/log/ackee.example.com.error.log;
+    access_log /var/log/nginx/log/FikraTracker.example.com.access.log main;
+    error_log  /var/log/nginx/log/FikraTracker.example.com.error.log;
 
     location / {
         add_header          Access-Control-Allow-Origin "*" always;

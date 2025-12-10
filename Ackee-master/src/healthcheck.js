@@ -15,7 +15,7 @@ const checkServer = async (url) => {
 	const response = await fetch(url)
 
 	if (response.ok === false) {
-		throw new Error(`Server is unhealthy and returned with the status '${ response.status }'`)
+		throw new Error(`Server is unhealthy and returned with the status '${response.status}'`)
 	}
 }
 
@@ -23,7 +23,7 @@ const checkApi = async (url) => {
 	const response = await fetch(url)
 
 	if (response.ok === false) {
-		throw new Error(`API is unhealthy and returned with the status '${ response.status }'`)
+		throw new Error(`API is unhealthy and returned with the status '${response.status}'`)
 	}
 }
 
@@ -31,12 +31,12 @@ const exit = (healthy) => process.exit(healthy === true ? 0 : 1)
 
 const check = () => Promise.all([
 	checkMongoDB(config.dbUrl),
-	checkServer(`http://localhost:${ config.port }`),
-	checkApi(`http://localhost:${ config.port }/.well-known/apollo/server-health`),
+	checkServer(`http://localhost:${config.port}`),
+	checkApi(`http://localhost:${config.port}/.well-known/apollo/server-health`),
 ])
 
 const handleSuccess = () => {
-	signale.success('Ackee is up and running')
+	signale.success('FikraTracker is up and running')
 	exit(true)
 }
 

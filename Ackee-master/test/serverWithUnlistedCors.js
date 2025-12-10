@@ -12,7 +12,7 @@ test('return cors headers with no origin if hostname not whitelisted in env var'
 	const url = new URL('/api', await base)
 
 	const restore = mockedEnv({
-		ACKEE_ALLOW_ORIGIN: 'https://example.com',
+		FIKRA_ALLOW_ORIGIN: 'https://example.com',
 	})
 
 	const { headers } = await fetch(url.href)

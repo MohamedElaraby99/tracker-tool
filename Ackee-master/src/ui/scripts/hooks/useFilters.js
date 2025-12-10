@@ -26,7 +26,7 @@ const RESET_FILTERS = Symbol()
 
 // The key should include the package version so we can increase the version number
 // when the structure of the state has changed to avoid loading an outdated state.
-const { get, set, reset } = createStorage(`ackee_filter_${ version }`, {
+const { get, set, reset } = createStorage(`fikra_filter_${version}`, {
 	sorting: SORTINGS_TOP,
 	range: RANGES_LAST_7_DAYS,
 	interval: INTERVALS_DAILY,
@@ -93,56 +93,56 @@ const reducer = (state, action) => {
 }
 
 export default () => {
-	const [ filters, dispatch ] = useReducer(reducer, get())
+	const [filters, dispatch] = useReducer(reducer, get())
 
 	const setSortingFilter = useCallback((payload) => dispatch({
 		type: SET_SORTING_FILTER,
 		payload,
-	}), [ dispatch ])
+	}), [dispatch])
 
 	const setRangeFilter = useCallback((payload) => dispatch({
 		type: SET_RANGE_FILTER,
 		payload,
-	}), [ dispatch ])
+	}), [dispatch])
 
 	const setIntervalFilter = useCallback((payload) => dispatch({
 		type: SET_INTERVAL_FILTER,
 		payload,
-	}), [ dispatch ])
+	}), [dispatch])
 
 	const setViewsTypeFilter = useCallback((payload) => dispatch({
 		type: SET_VIEWS_TYPE_FILTER,
 		payload,
-	}), [ dispatch ])
+	}), [dispatch])
 
 	const setReferrersTypeFilter = useCallback((payload) => dispatch({
 		type: SET_REFERRERS_TYPE_FILTER,
 		payload,
-	}), [ dispatch ])
+	}), [dispatch])
 
 	const setDevicesTypeFilter = useCallback((payload) => dispatch({
 		type: SET_DEVICES_TYPE_FILTER,
 		payload,
-	}), [ dispatch ])
+	}), [dispatch])
 
 	const setBrowsersTypeFilter = useCallback((payload) => dispatch({
 		type: SET_BROWSERS_TYPE_FILTER,
 		payload,
-	}), [ dispatch ])
+	}), [dispatch])
 
 	const setSizesTypeFilter = useCallback((payload) => dispatch({
 		type: SET_SIZES_TYPE_FILTER,
 		payload,
-	}), [ dispatch ])
+	}), [dispatch])
 
 	const setSystemsTypeFilter = useCallback((payload) => dispatch({
 		type: SET_SYSTEMS_TYPE_FILTER,
 		payload,
-	}), [ dispatch ])
+	}), [dispatch])
 
 	const resetFilters = useCallback(() => dispatch({
 		type: RESET_FILTERS,
-	}), [ dispatch ])
+	}), [dispatch])
 
 	return {
 		filters,

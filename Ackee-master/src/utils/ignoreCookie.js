@@ -1,9 +1,9 @@
 'use static'
 
-const COOKIE_NAME = 'ackee_ignore'
+const COOKIE_NAME = 'fikra_ignore'
 
 module.exports = {
-	isSet: (cookie = '') => cookie.includes(`${ COOKIE_NAME }=1`),
+	isSet: (cookie = '') => cookie.includes(`${COOKIE_NAME}=1`),
 	on: {
 		name: COOKIE_NAME,
 		value: '1',

@@ -21,7 +21,7 @@ import Line from '../Line'
 import Message from '../Message'
 
 const LoadingMessage = (props) => {
-	return h(Message, { status: 'warning' }, `Loading ${ props.label }...`)
+	return h(Message, { status: 'warning' }, `Loading ${props.label}...`)
 }
 
 const RouteSettings = (props) => {
@@ -83,39 +83,29 @@ const RouteSettings = (props) => {
 			h(CardSetting, {
 				headline: 'Domains',
 			},
-				...(domains.status.isInitializing === true ? [ domainsLoading ] : domainsItems),
+				...(domains.status.isInitializing === true ? [domainsLoading] : domainsItems),
 			),
 
 			h(CardSetting, {
 				headline: 'Events',
 			},
-				...(events.status.isInitializing === true ? [ eventsLoading ] : eventsItems),
+				...(events.status.isInitializing === true ? [eventsLoading] : eventsItems),
 			),
 
 			h(CardSetting, {
 				headline: 'Permanent Tokens',
 			},
-				...(permanentTokens.status.isInitializing === true ? [ permanentTokensLoading ] : permanentTokensItems),
+				...(permanentTokens.status.isInitializing === true ? [permanentTokensLoading] : permanentTokensItems),
 			),
 
-			h(CardSetting, {
-				headline: 'Donate',
-			},
-				h(LinkItem, { type: 'a', href: 'https://github.com/sponsors/electerious', target: '_blank', rel: 'noopener' }, 'Become a GitHub sponsor'),
-				h(Line),
-				h(LinkItem, { type: 'a', href: 'https://www.buymeacoffee.com/electerious', target: '_blank', rel: 'noopener' }, 'Buy me a coffee'),
-				h(Line),
-				h(LinkItem, { type: 'a', href: 'https://paypal.me/electerious', target: '_blank', rel: 'noopener' }, 'Donate via PayPal'),
-			),
+
 
 			h(CardSetting, {
 				headline: 'Help',
 			},
-				h(LinkItem, { type: 'a', href: 'https://ackee.electerious.com', target: '_blank', rel: 'noopener' }, 'Website and documentation'),
+				h(LinkItem, { type: 'a', href: homepage, target: '_blank', rel: 'noopener' }, 'FikraTracker on GitHub'),
 				h(Line),
-				h(LinkItem, { type: 'a', href: homepage, target: '_blank', rel: 'noopener' }, 'Ackee on GitHub'),
-				h(Line),
-				h(LinkItem, { type: 'a', href: 'https://github.com/electerious/ackee-tracker', target: '_blank', rel: 'noopener' }, 'Add Ackee to your sites'),
+				h(LinkItem, { type: 'a', href: homepage + '/docs', target: '_blank', rel: 'noopener' }, 'Documentation'),
 			),
 
 		)

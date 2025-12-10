@@ -59,7 +59,7 @@ const OverlayFailure = (props) => {
 				h('button', {
 					className: 'card__button card__button--primary link color-white',
 					onClick,
-				}, 'Reload Ackee'),
+				}, 'Reload FikraTracker'),
 
 			),
 		)

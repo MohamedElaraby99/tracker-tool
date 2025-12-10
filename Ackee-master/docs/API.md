@@ -1,6 +1,6 @@
 # API
 
-Ackee features a GraphQL API that allows you to build custom tools upon Ackee. Everything you see in the UI is made from data delivered by the API.
+FikraTracker features a GraphQL API that allows you to build custom tools upon FikraTracker. Everything you see in the UI is made from data delivered by the API.
 
 Here are a few resources to help you get started with GraphQL:
 
@@ -9,11 +9,11 @@ Here are a few resources to help you get started with GraphQL:
 
 ## Playground
 
-GraphQL Playground is a graphical, interactive, in-browser GraphQL IDE. It allows you to play and experiment with the API of Ackee.
+GraphQL Playground is a graphical, interactive, in-browser GraphQL IDE. It allows you to play and experiment with the API of FikraTracker.
 
-Simply run Ackee with `NODE_ENV` set to `development` and visit the `/api` playground in your browser. You can do so by adding `NODE_ENV=development` to the environment of your `docker-compose.yml` or by using `npm run dev`. Only use this mode on your local machine as Ackee runs slower when in development mode.
+Simply run FikraTracker with `NODE_ENV` set to `development` and visit the `/api` playground in your browser. You can do so by adding `NODE_ENV=development` to the environment of your `docker-compose.yml` or by using `npm run dev`. Only use this mode on your local machine as FikraTracker runs slower when in development mode.
 
-Try the [🔮 live playground](https://demo.ackee.electerious.com/api) of the Ackee demo.
+Try the [🔮 live playground](https://demo.FikraTracker.electerious.com/api) of the FikraTracker demo.
 
 ## Authentication
 
@@ -58,7 +58,7 @@ Protected queries and mutations need to include the `Authorization` HTTP header.
 
 Permanent tokens don't expire and are perfect for tools that run periodically in the background. In this case you want a token that is always valid so you don't have to enter your credentials over and over again.
 
-You can create permanent tokens in the settings of Ackee or via the API. Creating a permanent token requires a valid [Authorization header](#use-a-token). This means that you can only create permanent tokens with a valid (non-permanent) token.
+You can create permanent tokens in the settings of FikraTracker or via the API. Creating a permanent token requires a valid [Authorization header](#use-a-token). This means that you can only create permanent tokens with a valid (non-permanent) token.
 
 ```graphql
 mutation createPermanentToken($input: CreatePermanentTokenInput!) {

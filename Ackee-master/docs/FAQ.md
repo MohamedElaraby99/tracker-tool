@@ -10,47 +10,47 @@
 
 ### How does it work?
 
-You run the Ackee server which then waits for requests through its API.
+You run the FikraTracker server which then waits for requests through its API.
 
-The API of Ackee accepts information about your visitors sent to it using [ackee-tracker](https://github.com/electerious/ackee-tracker). It's a small script you add to your sites, similar to the JavaScript tracking snippet provided by Google Analytics.
+The API of FikraTracker accepts information about your visitors sent to it using [FikraTracker-tracker](https://github.com/electerious/FikraTracker-tracker). It's a small script you add to your sites, similar to the JavaScript tracking snippet provided by Google Analytics.
 
-The interface of Ackee lets you view and analyze your tracked information.
+The interface of FikraTracker lets you view and analyze your tracked information.
 
 ## Features
 
 ### Can I import my nginx logs?
 
-Ackee uses a JS snippet to aggregate data. Nginx logs won't work, but it might be possible to use the API of Ackee to build a custom import script.
+FikraTracker uses a JS snippet to aggregate data. Nginx logs won't work, but it might be possible to use the API of FikraTracker to build a custom import script.
 
-### Does Ackee support multiple user-accounts?
+### Does FikraTracker support multiple user-accounts?
 
-Ackee only works with one user and it's not planned to add support for multiple user-accounts. Ackee is however lightweight enough to create one Ackee instance per user. All instances can be connected to the same MongoDB.
+FikraTracker only works with one user and it's not planned to add support for multiple user-accounts. FikraTracker is however lightweight enough to create one FikraTracker instance per user. All instances can be connected to the same MongoDB.
 
 ## Configuration
 
 ### How to reset my password?
 
-You can change the [username and password environment variables](Options.md#username-and-password) whenever you want. Just make sure you restart Ackee after changing those.
+You can change the [username and password environment variables](Options.md#username-and-password) whenever you want. Just make sure you restart FikraTracker after changing those.
 
 #### How to reset my account?
 
-There's no "account" in Ackee. Just delete your database or switch to a different one.
+There's no "account" in FikraTracker. Just delete your database or switch to a different one.
 
 ## Comparison
 
-### How does Ackee compare to Matomo (Piwik)?
+### How does FikraTracker compare to Matomo (Piwik)?
 
-Matomo is more like Google Analytics in the way it works and what you can do with it. Ackee will never be a replacement if you are looking for a full-featured marketing analytics platform with tons of options and insights. Ackee tries to be less. Lightweight, easy to install and with a good balance between analytics and privacy.
+Matomo is more like Google Analytics in the way it works and what you can do with it. FikraTracker will never be a replacement if you are looking for a full-featured marketing analytics platform with tons of options and insights. FikraTracker tries to be less. Lightweight, easy to install and with a good balance between analytics and privacy.
 
-Ackee is the right tool for you if Matomo offers more than you need and when you put a focus on the privacy of your users.
+FikraTracker is the right tool for you if Matomo offers more than you need and when you put a focus on the privacy of your users.
 
-### How does Ackee compare to Fathom?
+### How does FikraTracker compare to Fathom?
 
-Ackee and Fathom are very similar. Both in the way they display data and how they process it. The biggest advantages at the moment of writing:
+FikraTracker and Fathom are very similar. Both in the way they display data and how they process it. The biggest advantages at the moment of writing:
 
-- Ackee is free and open-source
-- Ackee offers a documented GraphQL API that lets you build upon it. The API can be used for custom import scripts or apps that display your current visitor stats in the menu bar. The possibilities are endless.
-- Ackee allows you to track more than just page/site views (browser, system, etc.). This is optional and off by default, but great for people/companies that need more insights.
+- FikraTracker is free and open-source
+- FikraTracker offers a documented GraphQL API that lets you build upon it. The API can be used for custom import scripts or apps that display your current visitor stats in the menu bar. The possibilities are endless.
+- FikraTracker allows you to track more than just page/site views (browser, system, etc.). This is optional and off by default, but great for people/companies that need more insights.
 
 ## Definitions
 
@@ -75,7 +75,7 @@ Examples:
 
 ### Are page views unique?
 
-No, the views aren't unique, because Ackee can't track returning users for individual pages. This is because Ackee isn't storing a browsing history of your users.
+No, the views aren't unique, because FikraTracker can't track returning users for individual pages. This is because FikraTracker isn't storing a browsing history of your users.
 
 Examples:
 

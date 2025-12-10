@@ -35,7 +35,7 @@ module.exports = gql`
 		"""
 		title: String!
 		"""
-		Type of the event. Allows you to decide how Ackee should display the data of this event in the UI.
+		Type of the event. Allows you to decide how FikraTracker should display the data of this event in the UI.
 		"""
 		type: EventType!
 		"""

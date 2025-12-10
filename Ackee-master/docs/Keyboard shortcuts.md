@@ -2,7 +2,7 @@
 
 ## Switch between views
 
-In Ackee, you can quickly switch between views using the following keyboard shortcuts.
+In FikraTracker, you can quickly switch between views using the following keyboard shortcuts.
 
 | Key     | View        |
 |:--------|:------------|

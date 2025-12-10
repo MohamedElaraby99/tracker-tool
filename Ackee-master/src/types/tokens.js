@@ -20,11 +20,11 @@ module.exports = gql`
 
 	input CreateTokenInput {
 		"""
-		Username used to protect the Ackee instance.
+		Username used to protect the FikraTracker instance.
 		"""
 		username: String!
 		"""
-		Password used to protect the Ackee instance.
+		Password used to protect the FikraTracker instance.
 		"""
 		password: String!
 		"""

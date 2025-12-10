@@ -40,16 +40,16 @@ test.serial('return token and cookie after successful login', async (t) => {
 	}
 
 	const restore = mockedEnv({
-		ACKEE_USERNAME: username,
-		ACKEE_PASSWORD: password,
-		ACKEE_ALLOW_ORIGIN: 'https://badexample.com,https://bad.example.com,https://example.com',
+		FIKRA_USERNAME: username,
+		FIKRA_PASSWORD: password,
+		FIKRA_ALLOW_ORIGIN: 'https://badexample.com,https://bad.example.com,https://example.com',
 	})
 
 	const { headers, json } = await api(base, body, undefined, {
-		Host: 'ackee.example.com',
+		Host: 'fikra.example.com',
 	})
 
-	t.true(headers.get('Set-Cookie').includes('ackee_ignore=1'))
+	t.true(headers.get('Set-Cookie').includes('fikra_ignore=1'))
 	t.true(json.data.createToken.success)
 	t.is(typeof json.data.createToken.payload.id, 'string')
 
@@ -74,9 +74,9 @@ test.serial('clear login cookie after successful logout', async (t) => {
 	}
 
 	const { json, headers } = await api(base, body, undefined, {
-		Host: 'ackee.example.com',
+		Host: 'fikra.example.com',
 	})
 
-	t.true(headers.get('Set-Cookie').includes('ackee_ignore=0'))
+	t.true(headers.get('Set-Cookie').includes('fikra_ignore=0'))
 	t.true(json.data.deleteToken.success)
 })

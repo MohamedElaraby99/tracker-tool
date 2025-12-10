@@ -19,7 +19,7 @@ const OverlayLogin = (props) => {
 	const hasError = createToken.error != null
 	const loading = createToken.loading === true
 
-	const [ inputs, onInputChange ] = useInputs({
+	const [inputs, onInputChange] = useInputs({
 		username: window.env.isDemoMode === true ? 'admin' : '',
 		password: window.env.isDemoMode === true ? '123456' : '',
 	})
@@ -42,7 +42,7 @@ const OverlayLogin = (props) => {
 
 				h(Headline, {
 					type: 'h1',
-				}, 'Ackee'),
+				}, 'FikraTracker'),
 				h(Text, {
 					type: 'p',
 				}, 'Welcome back, sign in to continue.'),

@@ -4,7 +4,7 @@ const { gql } = require('apollo-server-micro')
 
 module.exports = gql`
 	"""
-	Page views will be stored in records. They contain data about the visit and user. Ackee tries its best to keep tracked data anonymized. Several steps are used to avoid that users are identifiable, while still providing helpful analytics.
+	Page views will be stored in records. They contain data about the visit and user. FikraTracker tries its best to keep tracked data anonymized. Several steps are used to avoid that users are identifiable, while still providing helpful analytics.
 	"""
 	type Record {
 		"""

@@ -27,7 +27,7 @@ test('return cors headers based on fully qualifed domain names', async (t) => {
 	const url = new URL('/api', await base)
 
 	const restore = mockedEnv({
-		ACKEE_AUTO_ORIGIN: 'true',
+		FIKRA_AUTO_ORIGIN: 'true',
 	})
 
 	const { headers: fqdnHeaders } = await fetch(url.href, { headers: { Host: 'fqdn.example.com' } })

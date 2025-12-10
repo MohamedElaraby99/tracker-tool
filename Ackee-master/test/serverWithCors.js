@@ -12,7 +12,7 @@ test('return cors headers if env var specifies one', async (t) => {
 	const url = new URL('/api', await base)
 
 	const restore = mockedEnv({
-		ACKEE_ALLOW_ORIGIN: url.origin,
+		FIKRA_ALLOW_ORIGIN: url.origin,
 	})
 
 	const { headers } = await fetch(url.href)

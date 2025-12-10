@@ -1,35 +1,35 @@
 <div align="center">
 
-<img src="https://s.electerious.com/images/ackee/icon.png" title="Ackee" alt="Ackee logo" width="128">
+<img src="https://s.fikratracker.com/images/FikraTracker/icon.png" title="FikraTracker" alt="FikraTracker logo" width="128">
 
-# Ackee
+# FikraTracker
 
-[![Test](https://github.com/electerious/Ackee/actions/workflows/test.yml/badge.svg)](https://github.com/electerious/Ackee/actions/workflows/test.yml) [![Mentioned in Awesome Selfhosted](https://awesome.re/mentioned-badge.svg)](https://github.com/awesome-selfhosted/awesome-selfhosted) [![Donate via PayPal](https://img.shields.io/badge/paypal-donate-009cde.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CYKBESW577YWE)
+[![Test](https://github.com/fikratracker/FikraTracker/actions/workflows/test.yml/badge.svg)](https://github.com/fikratracker/FikraTracker/actions/workflows/test.yml) [![Mentioned in Awesome Selfhosted](https://awesome.re/mentioned-badge.svg)](https://github.com/awesome-selfhosted/awesome-selfhosted) [![Donate via PayPal](https://img.shields.io/badge/paypal-donate-009cde.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CYKBESW577YWE)
 
-Self-hosted, Node.js based analytics tool for those who care about privacy. Ackee runs on your own server, analyzes the traffic of your websites and provides useful statistics in a minimal interface.
+Self-hosted, Node.js based analytics tool for those who care about privacy. FikraTracker runs on your own server, analyzes the traffic of your websites and provides useful statistics in a minimal interface.
 
-[🌍 Website](https://ackee.electerious.com) | [🔮 Live Demo](https://demo.ackee.electerious.com) | [🧸 GraphQL Playground](https://demo.ackee.electerious.com/api)
+[🌍 Website](https://FikraTracker.fikratracker.com) | [🔮 Live Demo](https://demo.FikraTracker.fikratracker.com) | [🧸 GraphQL Playground](https://demo.FikraTracker.fikratracker.com/api)
 
 <br/>
 
-![Ackee in a browser](https://s.electerious.com/images/ackee/readme.png)
+![FikraTracker in a browser](https://s.fikratracker.com/images/FikraTracker/readme.png)
 
 </div>
 
 ## 👋 Introduction
 
-Ackee is a self-hosted analytics tool that cares about privacy. We believe that you don't need to track every aspect of your visitors. Ackee keeps tracked data anonymized to avoid that users are identifiable, while still providing helpful insights. It's the right tool for everyone who doesn't need a full-featured marketing analytics platform like Google Analytics or Matomo.
+FikraTracker is a self-hosted analytics tool that cares about privacy. We believe that you don't need to track every aspect of your visitors. FikraTracker keeps tracked data anonymized to avoid that users are identifiable, while still providing helpful insights. It's the right tool for everyone who doesn't need a full-featured marketing analytics platform like Google Analytics or Matomo.
 
-- **Self-hosted**: Ackee runs on your own server and is 100% open-source
+- **Self-hosted**: FikraTracker runs on your own server and is 100% open-source
 - **Modern technologies**: Lightweight Node.js and MongoDB architecture
 - **Beautiful**: Minimal and focused interface
 - **No cookies**: No unique user tracking and therefore no required cookie message
 - **Events**: Track button clicks, newsletter subscriptions and more
-- **GraphQL API**: Fully documented GraphQL API that allows you to build new tools upon Ackee
+- **GraphQL API**: Fully documented GraphQL API that allows you to build new tools upon FikraTracker
 
 ## 🚀 Get started
 
-Get Ackee up and running…
+Get FikraTracker up and running…
 
 - […with Docker Compose](docs/Get%20started.md#with-docker-compose)
 - […with Docker](docs/Get%20started.md#with-docker)
@@ -44,7 +44,7 @@ Get Ackee up and running…
 - […with Koyeb](docs/Get%20started.md#with-koyeb)
 - […with Zeabur](docs/Get%20started.md#with-zeabur)
 
-And configure Ackee and your server correctly…
+And configure FikraTracker and your server correctly…
 
 - […with environment variables](docs/Options.md)
 - […with SSL and HTTPS enabled](docs/SSL%20and%20HTTPS.md)
@@ -58,49 +58,49 @@ Documentation and guides are located in [the /docs folder](docs/). Also take a l
 
 ### API
 
-Ackee features a [GraphQL API](docs/API.md) that allows you to build custom tools upon Ackee. Everything you see in the UI is made from data delivered by the API.
+FikraTracker features a [GraphQL API](docs/API.md) that allows you to build custom tools upon FikraTracker. Everything you see in the UI is made from data delivered by the API.
 
 ### Options
 
-Ackee uses environment variables and supports [`.env` files](https://www.npmjs.com/package/dotenv) in the root of the project if you want to store all variables in one file. [Options &#187;](docs/Options.md)
+FikraTracker uses environment variables and supports [`.env` files](https://www.npmjs.com/package/dotenv) in the root of the project if you want to store all variables in one file. [Options &#187;](docs/Options.md)
 
 ## Miscellaneous
 
 ### Donate
 
-I am working hard on continuously developing and maintaining Ackee. Please consider making a donation to keep the project going strong and me motivated.
+I am working hard on continuously developing and maintaining FikraTracker. Please consider making a donation to keep the project going strong and me motivated.
 
-- [Become a GitHub sponsor](https://github.com/sponsors/electerious)
-- [Donate via PayPal](https://paypal.me/electerious)
-- [Buy me a coffee](https://www.buymeacoffee.com/electerious)
+- [Become a GitHub sponsor](https://github.com/sponsors/fikratracker)
+- [Donate via PayPal](https://paypal.me/fikratracker)
+- [Buy me a coffee](https://www.buymeacoffee.com/fikratracker)
 
 ### Articles
 
-- [Quit Google Analytics, Self-hosted Gatsby Statistics with Ackee](https://dev.to/aleccool213/quit-google-analytics-self-hosted-gatsby-statistics-with-ackee-4011)
-- [Getting Ackee up and running with Heroku 🇪🇸](https://rubenr.dev/blog/ackee-analitica-web-sencilla/)
+- [Quit Google Analytics, Self-hosted Gatsby Statistics with FikraTracker](https://dev.to/aleccool213/quit-google-analytics-self-hosted-gatsby-statistics-with-FikraTracker-4011)
+- [Getting FikraTracker up and running with Heroku 🇪🇸](https://rubenr.dev/blog/FikraTracker-analitica-web-sencilla/)
 - [Why I Self-Host My Website Analytics](https://mbuffett.com/posts/why-i-self-host-my-analytics/)
-- [Beyond Google Analytics: Embrace Privacy with Ackee on Vercel](https://lev.engineer/blog/beyond-google-analytics-embrace-privacy-with-ackee-on-vercel)
+- [Beyond Google Analytics: Embrace Privacy with FikraTracker on Vercel](https://lev.engineer/blog/beyond-google-analytics-embrace-privacy-with-FikraTracker-on-vercel)
 
 ### Related
 
-- [ackee-tracker](https://github.com/electerious/ackee-tracker) - Transfer data to Ackee
-- [ackee-bitbar](https://github.com/electerious/ackee-bitbar) - Ackee stats in your macOS menu bar
-- [ackee-lighthouse](https://github.com/electerious/ackee-lighthouse) - Send Lighthouse reports to Ackee
-- [ackee-report](https://github.com/BetaHuhn/ackee-report) - CLI tool to generate performance reports
-- [gatsby-plugin-ackee-tracker](https://github.com/Burnsy/gatsby-plugin-ackee-tracker) - Gatsby plugin for Ackee
-- [Soapberry](https://wordpress.org/plugins/soapberry/) - WordPress plugin for Ackee
-- [Ackee-PHP](https://github.com/BrookeDot/ackee-php) - A PHP Class for Ackee
-- [use-ackee](https://github.com/electerious/use-ackee) - Use Ackee in React
-- [nuxt-ackee](https://github.com/bdrtsky/nuxt-ackee) - Nuxt.js module for Ackee
-- [ngx-ackee-wrapper](https://github.com/oakify/ngx-ackee-wrapper) - Angular wrapper for Ackee
-- [django-ackee-middleware](https://github.com/suda/django-ackee-middleware) - Django middleware for Ackee
-- [gridsome-plugin-ackee](https://github.com/DenzoNL/gridsome-plugin-ackee) - Gridsome plugin for Ackee
-- [vuepress-plugin-ackee](https://github.com/spekulatius/vuepress-plugin-ackee) - VuePress plugin for Ackee
-- [svelte-ackee](https://github.com/gaia-green-tech/svelte-ackee) - Svelte module for Ackee
-- [ackee_dart](https://github.com/marchellodev/ackee_dart) - Ackee plugin for Dart/Flutter ([pub.dev](https://pub.dev/packages/ackee_dart))
-- [ackee-tracker-consent](https://www.npmjs.com/package/ackee-tracker-consent) - A consent banner to activate detailed tracking on Ackee
+- [FikraTracker-tracker](https://github.com/fikratracker/FikraTracker-tracker) - Transfer data to FikraTracker
+- [FikraTracker-bitbar](https://github.com/fikratracker/FikraTracker-bitbar) - FikraTracker stats in your macOS menu bar
+- [FikraTracker-lighthouse](https://github.com/fikratracker/FikraTracker-lighthouse) - Send Lighthouse reports to FikraTracker
+- [FikraTracker-report](https://github.com/BetaHuhn/FikraTracker-report) - CLI tool to generate performance reports
+- [gatsby-plugin-FikraTracker-tracker](https://github.com/Burnsy/gatsby-plugin-FikraTracker-tracker) - Gatsby plugin for FikraTracker
+- [Soapberry](https://wordpress.org/plugins/soapberry/) - WordPress plugin for FikraTracker
+- [FikraTracker-PHP](https://github.com/BrookeDot/FikraTracker-php) - A PHP Class for FikraTracker
+- [use-FikraTracker](https://github.com/fikratracker/use-FikraTracker) - Use FikraTracker in React
+- [nuxt-FikraTracker](https://github.com/bdrtsky/nuxt-FikraTracker) - Nuxt.js module for FikraTracker
+- [ngx-FikraTracker-wrapper](https://github.com/oakify/ngx-FikraTracker-wrapper) - Angular wrapper for FikraTracker
+- [django-FikraTracker-middleware](https://github.com/suda/django-FikraTracker-middleware) - Django middleware for FikraTracker
+- [gridsome-plugin-FikraTracker](https://github.com/DenzoNL/gridsome-plugin-FikraTracker) - Gridsome plugin for FikraTracker
+- [vuepress-plugin-FikraTracker](https://github.com/spekulatius/vuepress-plugin-FikraTracker) - VuePress plugin for FikraTracker
+- [svelte-FikraTracker](https://github.com/gaia-green-tech/svelte-FikraTracker) - Svelte module for FikraTracker
+- [FikraTracker_dart](https://github.com/marchellodev/FikraTracker_dart) - FikraTracker plugin for Dart/Flutter ([pub.dev](https://pub.dev/packages/FikraTracker_dart))
+- [FikraTracker-tracker-consent](https://www.npmjs.com/package/FikraTracker-tracker-consent) - A consent banner to activate detailed tracking on FikraTracker
 
 ### Links
 
-- [Follow Ackee on Twitter](https://twitter.com/getackee)
-- [Vote for Ackee on ProductHunt](https://www.producthunt.com/posts/ackee)
+- [Follow FikraTracker on Twitter](https://twitter.com/getFikraTracker)
+- [Vote for FikraTracker on ProductHunt](https://www.producthunt.com/posts/FikraTracker)

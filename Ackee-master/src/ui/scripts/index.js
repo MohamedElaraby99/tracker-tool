@@ -18,7 +18,7 @@ import Main from './components/Main'
 import ErrorBoundary from './components/ErrorBoundary'
 
 if (window.env.isDemoMode === true) {
-	console.warn('Ackee runs in demo mode')
+	console.warn('FikraTracker runs in demo mode')
 }
 
 const {
@@ -38,7 +38,7 @@ const App = () => {
 	// reset the states of hooks inside the Main component and therefore
 	// all existing GraphQL errors that occurred before the reset.
 	// https://github.com/molindo/react-apollo-network-status/issues/45
-	const [ key, setKey ] = useState(Date.now())
+	const [key, setKey] = useState(Date.now())
 
 	const loading = useLoading()
 	const router = useRouter()
@@ -57,7 +57,7 @@ const App = () => {
 
 		// Reset the main component and the states it contains
 		setKey(Date.now())
-	}, [ token.resetToken, modals.resetModals, filters.resetFilters, client.resetStore, setKey ])
+	}, [token.resetToken, modals.resetModals, filters.resetFilters, client.resetStore, setKey])
 
 	useCustomScrollbar()
 	useScrollReset(router.route)
