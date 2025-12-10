@@ -15,7 +15,7 @@ const CurrentStatus = (props) => {
 
 	if (props.isEmpty === true) return h(Status, {},
 		'No data',
-		h(Tooltip, {}, 'There is either no data available or collecting detailed data is disabled in ackee-tracker.'),
+		h(Tooltip, {}, 'There is either no data available or collecting detailed data is disabled in fikra-tracker.'),
 	)
 
 	return h(Status, {}, props.children)
